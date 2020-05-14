@@ -93,7 +93,7 @@ DATABASES = {
 '''
 
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600)
+    'default': dj_database_url.config()
 }
 
 # Password validation
@@ -140,4 +140,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 #E-mail de teste que mostra o formulário no console
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-LOGOUT_REDIRECT_URL = 'index'
