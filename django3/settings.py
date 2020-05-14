@@ -79,7 +79,8 @@ WSGI_APPLICATION = 'django3.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-'''DATABASES = {
+'''
+DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'django3',
@@ -88,9 +89,11 @@ WSGI_APPLICATION = 'django3.wsgi.application'
         'HOST': 'localhost',
         'PORT': '5432',
     }
-}'''
-
-DATABASES = {'default': dj_database_url.config()}
+}
+'''
+DATABASES = {
+    'default': dj_database_url.config()
+}
 
 
 # Password validation
@@ -135,6 +138,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 #E-mail de teste que mostra o formulário no console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+#EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 LOGOUT_REDIRECT_URL = 'index'
