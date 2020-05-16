@@ -50,7 +50,6 @@ class Cargo(Base):
         verbose_name = 'Cargo'
         verbose_name_plural = 'Cargos'
 
-
     def __str__(self):
         return self.cargo
 
